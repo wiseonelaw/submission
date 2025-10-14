@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You — Employment Submission | Nickalia Mclean</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1: #0f172a;
+      --bg2: #1f2937;
+      --accent: #ff6b81;
+      --accent-2: #7c5cff;
+      --gold: #f6c85f;
+      --glass: rgba(255,255,255,0.06);
+      --card: rgba(255,255,255,0.03);
+      --muted: rgba(255,255,255,0.7);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    body{
+      background: radial-gradient(1200px 600px at 10% 20%, rgba(124,92,255,0.12), transparent 10%),
+                  radial-gradient(1000px 500px at 90% 80%, rgba(255,107,129,0.08), transparent 10%),
+                  linear-gradient(180deg,var(--bg1),var(--bg2));
+      color: #fff; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      display:flex;align-items:center;justify-content:center;padding:40px;
+    }
+    .wrap{width:100%;max-width:1100px;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02)); border-radius:18px; padding:32px; box-shadow: 0 10px 30px rgba(2,6,23,0.6); backdrop-filter: blur(8px); position:relative; overflow:hidden}
+    .blob{position:absolute;border-radius:50%;filter:blur(30px);opacity:0.24}
+    .blob.a{width:420px;height:420px;background:linear-gradient(45deg,var(--accent),var(--accent-2));left:-120px;top:-140px}
+    .blob.b{width:260px;height:260px;background:linear-gradient(90deg,var(--accent-2),var(--gold));right:-80px;bottom:-100px}
+    .grid{display:grid;grid-template-columns: 1fr 420px;gap:28px;align-items:center}
+    @media (max-width:900px){.grid{grid-template-columns:1fr;}.wrap{padding:20px}}
+    .content h1{font-size:42px;margin:0 0 8px;line-height:1.02}
+    .script{font-family:'Great Vibes',cursive;font-size:46px;color:var(--gold);display:inline-block;margin-left:8px}
+    .subtitle{color:var(--muted);margin-bottom:18px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:14px;padding:18px;box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);}
+    .message{font-size:16px;line-height:1.6;color:rgba(255,255,255,0.95)}
+    .meta{margin-top:14px;color:rgba(255,255,255,0.8);font-size:14px}
+    .photo{height:420px;border-radius:14px;overflow:hidden;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));display:flex;flex-direction:column;align-items:center;justify-content:center;padding:22px}
+    .photo .avatar{width:220px;height:220px;border-radius:50%;overflow:hidden;box-shadow:0 8px 30px rgba(2,6,23,0.6);display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent),var(--accent-2));border:6px solid rgba(255,255,255,0.06)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .photo h3{margin:14px 0 6px}
+    .photo p{margin:0;color:var(--muted)}
+    .actions{display:flex;gap:12px;margin-top:18px}
+    .btn{appearance:none;border:0;padding:10px 16px;border-radius:12px;font-weight:600;cursor:pointer}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;box-shadow:0 8px 18px rgba(124,92,255,0.18)}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    #confetti{position:absolute;left:0;top:0;right:0;bottom:0;pointer-events:none}
+    .signature{display:flex;align-items:center;gap:12px;margin-top:18px}
+    .signature img{height:56px}
+    .sig-text{font-size:14px;color:var(--muted)}
+    footer{margin-top:20px;color:rgba(255,255,255,0.6);font-size:13px}
+    .wrap{transform:translateY(12px);opacity:0;animation:enter 700ms ease-out forwards}
+    @keyframes enter{to{transform:none;opacity:1}}
+    @keyframes glow{0%,100%{text-shadow:0 0 8px rgba(246,200,95,0.2)}50%{text-shadow:0 0 18px rgba(246,200,95,0.45)}}
+    .script{animation:glow 3.6s ease-in-out infinite}
+    .btn:focus{outline:3px solid rgba(124,92,255,0.18);outline-offset:3px}
+    @media print{body{background:white;color:black} .wrap{box-shadow:none;border:0} #confetti{display:none}}
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main" aria-labelledby="thankTitle">
+    <div class="blob a" aria-hidden="true"></div>
+    <div class="blob b" aria-hidden="true"></div>
+    <canvas id="confetti" aria-hidden="true"></canvas>
+    <div class="grid">
+      <div class="content">
+        <div class="card">
+          <h1 id="thankTitle">Thank you for your submission, <span class="script">Nickalia Mclean</span></h1>
+          <p class="subtitle">We appreciate your interest in joining our team.</p>
+
+          <p class="message">Dear Nickalia, <br><br>We have received your employment application successfully. Your enthusiasm, background, and dedication truly stand out. Our team will carefully review your submission and reach out if there’s a match for your skills and experience.<br><br>Thank you for taking the time to apply and for considering a future with us — your effort and interest mean a lot.</p>
+
+          <div class="meta">Submitted for: <strong>Employment Opportunity</strong></div>
+
+          <div class="actions" role="group" aria-label="Call to action buttons">
+            <button class="btn primary" onclick="downloadCard()">Download Confirmation</button>
+            <button class="btn ghost" onclick="print()">Print</button>
+          </div>
+
+          <div class="signature">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='56'><text x='0' y='40' font-family='Great Vibes, cursive' font-size='40' fill='%23f6c85f'>With appreciation</text></svg>" alt="signature" />
+            <div class="sig-text">HR Department<br/><strong>We’re excited to review your application.</strong></div>
+          </div>
+
+          <footer>Need to make changes or upload additional documents? You can reply directly to our confirmation email for assistance.</footer>
+        </div>
+      </div>
+
+      <aside class="photo" aria-label="Nickalia profile and highlight">
+        <div class="avatar" id="avatar">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&s=placeholder" alt="Nickalia Mclean portrait" />
+        </div>
+        <h3>Nickalia Mclean</h3>
+        <p>Employment Application Submitted Successfully</p>
+
+        <div style="margin-top:16px;display:flex;gap:10px">
+          <a class="btn ghost" href="#" onclick="share('twitter')">Share</a>
+          <a class="btn ghost" href="#" onclick="share('link')">Copy link</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    const confettiCanvas = document.getElementById('confetti');
+    const ctx = confettiCanvas.getContext('2d');
+    let W, H;
+    function setSize(){ W=confettiCanvas.width = document.documentElement.clientWidth; H=confettiCanvas.height = document.documentElement.clientHeight; }
+    setSize(); window.addEventListener('resize', setSize);
+    const colors = ['#ff6b81','#7c5cff','#f6c85f','#7ee7c7','#5fd3ff'];
+    const pieces = [];
+    function rand(min,max){return Math.random()*(max-min)+min}
+    function makePiece(){ return { x: rand(0,W), y: rand(-H,0), vx: rand(-0.6,0.6), vy: rand(1,3), size: rand(6,14), color: colors[Math.floor(Math.random()*colors.length)], rotate: rand(0,360), vr: rand(-6,6) } }
+    for(let i=0;i<80;i++) pieces.push(makePiece());
+    function draw(){ ctx.clearRect(0,0,W,H); for(const p of pieces){ p.x += p.vx; p.y += p.vy; p.rotate += p.vr; ctx.save(); ctx.translate(p.x,p.y); ctx.rotate(p.rotate*Math.PI/180); ctx.fillStyle = p.color; ctx.fillRect(-p.size/2, -p.size/2, p.size, p.size*0.6); ctx.restore(); if(p.y>H+40){ Object.assign(p, makePiece(), {y:-20}); } } requestAnimationFrame(draw); }
+    requestAnimationFrame(draw);
+
+    async function downloadCard(){
+      const el = document.querySelector('.wrap');
+      const rect = el.getBoundingClientRect();
+      const scale = 2;
+      const canvas = document.createElement('canvas');
+      canvas.width = rect.width*scale; canvas.height = rect.height*scale;
+      const c = canvas.getContext('2d');
+      const g = c.createLinearGradient(0,0,0,canvas.height); g.addColorStop(0,'#0f172a'); g.addColorStop(1,'#1f2937'); c.fillStyle = g; c.fillRect(0,0,canvas.width,canvas.height);
+      c.fillStyle = '#ffffff'; c.font = `${20*scale}px Poppins`; c.fillText('Employment Application Received — Nickalia Mclean', 40*scale, 80*scale);
+      const img = document.querySelector('.avatar img');
+      try{
+        const fetchImg = await fetch(img.src); const blob = await fetchImg.blob(); const bitmap = await createImageBitmap(blob);
+        c.drawImage(bitmap, canvas.width - 280*scale, 60*scale, 220*scale, 220*scale);
+      }catch(e){}
+      const a = document.createElement('a'); a.download = 'employment-confirmation-nickalia-mclean.png'; a.href = canvas.toDataURL('image/png'); a.click();
+    }
+
+    function share(kind){ if(kind==='twitter'){ const url = encodeURIComponent(location.href); const text = encodeURIComponent('Thank you Nickalia Mclean for your employment submission!'); window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`,'_blank'); } else { navigator.clipboard?.writeText(location.href).then(()=> alert('Link copied to clipboard')) }
+    }
+  </script>
+</body>
+</html>
